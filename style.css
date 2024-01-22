@@ -3,21 +3,31 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fff;
-    border: 10px solid #fff;
-    box-shadow: 0 0 20px rgba(255, 160, 122, 0.5);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 .container {
+    flex: 1;
+    padding: 200px;
+    background-image: url("assets/abstract_blured.jpg");
+    background-size: cover;
     display: flex;
+    backdrop-filter: blur(10px);
 }
 
 .left-side {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     flex: 1;
     background-color: #ccc;
     padding: 20px;
 }
 
 .right-side {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     flex: 1;
     background-color: #fff;
     padding: 20px;
@@ -36,7 +46,31 @@ body {
 }
 
 .personal-info {
-    margin-top: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.personal-info p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.personal-info p img {
+    margin-right: 10px;
+}
+
+.personal-info a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1px;
+}
+
+.personal-info a:hover {
+    text-decoration: underline;
 }
 
 .experience,
