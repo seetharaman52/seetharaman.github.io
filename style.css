@@ -1,0 +1,46 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border: 10px solid #fff;
+    box-shadow: 0 0 20px rgba(255, 160, 122, 0.5);
+}
+
+.container {
+    display: flex;
+}
+
+.left-side {
+    flex: 1;
+    background-color: #ccc;
+    padding: 20px;
+}
+
+.right-side {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.img-seeth-section {
+    text-align: center;
+}
+
+.img-seeth-section img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.personal-info {
+    margin-top: 20px;
+}
+
+.experience,
+.education,
+.courses {
+    margin-top: 20px;
+}
