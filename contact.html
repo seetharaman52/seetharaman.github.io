@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link href="style_con.css" rel="stylesheet">
+  <script>
+    function submitForm(){
+        var name = document.getElementById("name").value;
+        var message = `Name: ${name}` + "\n" + document.getElementById("message").value;
+        var mailTo = "mailto:seetharamanshan699@gmail.com"
+                    + "?body=" + encodeURIComponent(message);
+        window.location.href = mailTo;
+        return false;
+    }
+  </script>
+</head>
+<body>
+  <form id="myForm" onsubmit="return submitForm()">
+    <label class="base" for="name"><i>Name:</i></label>
+    <input class="baseinput" type="text" id="name" name="name" required>
+
+    <label class="base" for="message"><i>Message:</i></label>
+    <textarea class="basemessage" id="message" name="message" rows="5" required></textarea>
+
+    <button class="subbutton" class="cent" type="submit">Submit</button>
+  </form>
+</body>
+</html>
